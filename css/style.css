@@ -924,3 +924,9 @@ ul.conta li a {
 .hosting_page .footer {
      margin-top: 60px;
 }
+
+#imgdatabase{
+     position: relative;
+     right: 2rem;
+     bottom: 3rem;
+}

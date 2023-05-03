@@ -934,3 +934,34 @@ ul.conta li a {
 #nav-link123:hover{
      color:#1ee1d6;
 }
+.login1{
+     margin: 10px;
+     padding: 10px;
+     border: 3px solid black;
+     border-radius: 30px;
+}
+.row123{
+     position: relative;
+     left: 440px;
+}
+#send_btn1{
+     font-size: 17px;
+     transition: ease-in all 0.5s;
+     background-color: #43eee4;
+     text-transform: uppercase;
+     color: #fff;
+     max-width: 203px;
+     width: 100%;
+     display: block;
+     margin: 0 auto;
+     margin-top: 10px;
+     font-weight: 500;
+     border-radius: 40px;
+     line-height: 69px;
+     height: 60px;
+     padding-bottom: 20px ;
+}
+#send_btn1:hover{
+     background: #030564;
+     color: #fff;
+}

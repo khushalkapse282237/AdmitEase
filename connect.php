@@ -1,17 +1,22 @@
 <?php
+
+$servername="localhost";
+$username="root";
+$password="";
+$database_name="admitease";
+$conn = mysqli_connect($servername,$username,$password,$database_name);
+if(!$conn){
+    die("connection failed" . mysqli_connect_error());
+}
+if(True){
     $Email = $_POST['Email'];
     $Password = $_POST['Password'];
-
-    //connection of database
-    $conn = new mysqli('localhost','root','I@aLi0nTmrw','admitease');
-    if($conn->connect_error){
-        die('Connection Failed :' .$conn->connect_error);
+    $sql_query = "insert into login123(Email,Password) values ('$Email' , '$Password')";
+    if(mysqli_query($conn , $sql_query)){
+        echo "Newdetails entry is successful";
     }else{
-        $stmt = $conn->prepare("insert into login(Email,Password) values(?,?)");
-        $stmt -> bind_param("ss",$Email,$Password);
-        $stmt -> execute();
-        echo "registration successfull";
-        $stmt -> close();
-        $conn -> close();
+        echo "error " . $sql ."" . mysqli_error($conn);
     }
+    mysqli_close($conn);
+}
 ?>

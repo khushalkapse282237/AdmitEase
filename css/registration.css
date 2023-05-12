@@ -159,3 +159,6 @@ form .user-details .input-box{
 .button1::after{
   text-decoration: none;
 }
+.input-box:hover{
+  cursor: pointer;
+}

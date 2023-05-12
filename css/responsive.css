@@ -180,4 +180,8 @@ File Name: responsive.css
     .d_none {
         display: none;
     }
+    #imgdatabase{
+        height: 100px;
+        width: 100px;
+    }
 }
